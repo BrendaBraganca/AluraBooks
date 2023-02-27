@@ -1,0 +1,49 @@
+hr {
+    margin: 0;
+}
+.rodape__mensagem {
+    color: black;
+    padding: 1em 0.5em;
+}
+
+.rodape {
+    background-color: var(--branco);
+}
+.rodape__coluna {
+    display: none;
+}
+.rodape__telefone {
+    display: block;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        justify-content: space-between;
+    }
+    .rodape__mensagem {
+        font-size: 24px;
+        color: var(--preto);
+    }
+    .rodape__coluna {
+        display: block;
+        padding: 0 2em 3em 0;
+    }
+    .rodape__coluna-titulo {
+        font-size: 14px;
+        color: var(--cinza);
+        text-transform: uppercase;
+        padding: 2em 0;
+    }
+    .rodape__lista__item {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0;
+    }
+    .rodape__link {
+        text-decoration: none;
+        color: var(--cinxa-escuro);
+        font-size: 14px;
+        padding-left: 0.5em;
+    }
+}
